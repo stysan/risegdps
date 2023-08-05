@@ -90,7 +90,7 @@ details > summary::-webkit-details-marker {
 }
 summary::before {
   content: "▼ ";
-  margin-left: -20px;
+  list-style-position: outside;
 }
 details[open] > summary::before {
   content: "▲ ";
@@ -118,4 +118,7 @@ br.big {
 }
 details[open] {
   margin-bottom: 1em;
+}
+ol li::marker {
+  list-style-position: outside;
 }
